@@ -18,6 +18,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestCpp", "Swig\Swig.vcxpro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{86504089-1927-4DB4-A64A-8CC032D09A53}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Wrapper", "Wrapper", "{9DB6018E-2EDF-4DDB-83A4-78593A1DE695}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{76B3C443-D955-46A5-8293-5C2E04E2A8C8} = {9DB6018E-2EDF-4DDB-83A4-78593A1DE695}
+		{7B766E8D-EC14-401F-B215-183C54D90121} = {9DB6018E-2EDF-4DDB-83A4-78593A1DE695}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A297BDB8-2860-402D-83C7-1C635CC9A08F}

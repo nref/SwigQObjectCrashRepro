@@ -59,7 +59,7 @@
       <PreprocessorDefinitions>NDEBUG;TESTCPPWRAP_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>..\TestCpp\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\TestCpp;..\qt\include</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
@@ -68,7 +68,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalDependencies>..\TestCpp\$(Platform)\$(Configuration)\bin\TestCpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>..\TestCpp\$(Platform)\$(Configuration)\bin\TestCpp.lib;..\qt\lib\QtCore4.lib;..\qt\lib\qtmain.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
       <Command>
@@ -87,14 +87,14 @@
       <PreprocessorDefinitions>_DEBUG;TESTCPPWRAP_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>..\TestCpp</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\TestCpp;..\qt\include</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalDependencies>..\TestCpp\$(Platform)\$(Configuration)\bin\TestCpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>..\TestCpp\$(Platform)\$(Configuration)\bin\TestCpp.lib;..\qt\lib\QtCore4.lib;..\qt\lib\qtmain.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
       <Command>

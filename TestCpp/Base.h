@@ -4,7 +4,7 @@
 
 namespace TestCpp
 {
-  class Base
+  class Base 
   {
   public:
     std::shared_ptr<Other> GetSharedPtr();

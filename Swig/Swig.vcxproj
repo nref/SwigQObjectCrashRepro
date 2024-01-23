@@ -109,10 +109,10 @@
     <CustomBuild Include="testcpp.i">
       <FileType>Document</FileType>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-        swig -v -Wall -Wallkw -I..\TestCpp -outdir generated\TestCpp -c++ -csharp -namespace TestCpp -dllimport TestCpp %(Identity)
+        swig -v -Wall -Wallkw -I..\TestCpp -I..\qt\include -outdir generated\TestCpp -c++ -csharp -namespace TestCpp -dllimport TestCpp.dll %(Identity)
       </Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-        swig -v -Wall -Wallkw -I..\TestCpp -outdir generated\TestCpp -c++ -csharp -namespace TestCpp -dllimport TestCpp %(Identity)
+        swig -v -Wall -Wallkw -I..\TestCpp -I..\qt\include -outdir generated\TestCpp -c++ -csharp -namespace TestCpp -dllimport TestCpp.dll %(Identity)
       </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">testcpp_wrap.cxx</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">testcpp_wrap.cxx</Outputs>

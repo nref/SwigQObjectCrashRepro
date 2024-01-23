@@ -3,8 +3,12 @@
 
 using namespace TestCpp;
 
-std::shared_ptr<Other> TestCpp::Base::GetSharedPtr()
+std::shared_ptr<QObject> TestCpp::Base::GetSharedPtr()
 {
-  return std::make_shared<Other>();
+  return std::shared_ptr<QObject>(this);
 }
 
+std::shared_ptr<Base> TestCpp::Base::GetSharedPtr2()
+{
+  return std::shared_ptr<Base>(this);
+}

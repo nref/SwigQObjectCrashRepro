@@ -1,4 +1,6 @@
 ﻿using TestCpp;
 
-var derived = new Derived();
-Console.WriteLine(derived.GetSharedPtr().GetName());
+using (var derived = new Derived())
+{
+  Console.WriteLine(derived.GetSharedPtr().objectName());
+};

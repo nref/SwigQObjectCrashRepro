@@ -2,18 +2,43 @@
 
 %{
 
+//#include "QtCore/QObject.h"
 #include "Base.h"
 #include "Derived.h"
-#include "Other.h"
 
 %}
 
-%include "std_string.i"
+//%include "std_string.i"
+
+class QObject
+{
+public:
+  QString objectName() const;
+  void setObjectName(const QString &name);
+};
+
+/*
+class QString 
+{
+public:
+    static QString fromStdString(const std::string &s);
+    std::string toStdString() const;
+    
+    int size() const;
+    int count() const;
+    int length() const;
+    bool isEmpty() const;
+};
+*/
+
 %include "std_shared_ptr.i"
+%shared_ptr(QObject);
 %shared_ptr(TestCpp::Base);
 %shared_ptr(TestCpp::Derived);
-%shared_ptr(TestCpp::Other);
-%include "Other.h"
+
+//#undef QT_MODULE
+//%include "../src/corelib/kernel/qobject.h"
+//%include "QtCore/QObject.h"
 %include "Base.h"
 %include "Derived.h"
 

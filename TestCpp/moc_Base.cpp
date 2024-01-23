@@ -1,14 +1,14 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'Other.h'
+** Meta object code from reading C++ file 'Base.h'
 **
 ** Created by: The Qt Meta Object Compiler version 63 (Qt 4.8.7)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "Other.h"
+#include "Base.h"
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'Other.h' doesn't include <QObject>."
+#error "The header file 'Base.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 63
 #error "This file was generated using the moc from 4.8.7. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -16,7 +16,7 @@
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-static const uint qt_meta_data_TestCpp__Other[] = {
+static const uint qt_meta_data_TestCpp__Base[] = {
 
  // content:
        6,       // revision
@@ -32,11 +32,11 @@ static const uint qt_meta_data_TestCpp__Other[] = {
        0        // eod
 };
 
-static const char qt_meta_stringdata_TestCpp__Other[] = {
-    "TestCpp::Other\0"
+static const char qt_meta_stringdata_TestCpp__Base[] = {
+    "TestCpp::Base\0"
 };
 
-void TestCpp::Other::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void TestCpp::Base::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     Q_UNUSED(_o);
     Q_UNUSED(_id);
@@ -44,33 +44,33 @@ void TestCpp::Other::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
     Q_UNUSED(_a);
 }
 
-const QMetaObjectExtraData TestCpp::Other::staticMetaObjectExtraData = {
+const QMetaObjectExtraData TestCpp::Base::staticMetaObjectExtraData = {
     0,  qt_static_metacall 
 };
 
-const QMetaObject TestCpp::Other::staticMetaObject = {
-    { &QObject::staticMetaObject, qt_meta_stringdata_TestCpp__Other,
-      qt_meta_data_TestCpp__Other, &staticMetaObjectExtraData }
+const QMetaObject TestCpp::Base::staticMetaObject = {
+    { &QObject::staticMetaObject, qt_meta_stringdata_TestCpp__Base,
+      qt_meta_data_TestCpp__Base, &staticMetaObjectExtraData }
 };
 
 #ifdef Q_NO_DATA_RELOCATION
-const QMetaObject &TestCpp::Other::getStaticMetaObject() { return staticMetaObject; }
+const QMetaObject &TestCpp::Base::getStaticMetaObject() { return staticMetaObject; }
 #endif //Q_NO_DATA_RELOCATION
 
-const QMetaObject *TestCpp::Other::metaObject() const
+const QMetaObject *TestCpp::Base::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
 }
 
-void *TestCpp::Other::qt_metacast(const char *_clname)
+void *TestCpp::Base::qt_metacast(const char *_clname)
 {
     if (!_clname) return 0;
-    if (!strcmp(_clname, qt_meta_stringdata_TestCpp__Other))
-        return static_cast<void*>(const_cast< Other*>(this));
+    if (!strcmp(_clname, qt_meta_stringdata_TestCpp__Base))
+        return static_cast<void*>(const_cast< Base*>(this));
     return QObject::qt_metacast(_clname);
 }
 
-int TestCpp::Other::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int TestCpp::Base::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QObject::qt_metacall(_c, _id, _a);
     if (_id < 0)

@@ -10,6 +10,5 @@
 // add headers that you want to pre-compile here
 #include "Base.h"
 #include "Derived.h"
-#include "Other.h"
 
 #endif //PCH_H

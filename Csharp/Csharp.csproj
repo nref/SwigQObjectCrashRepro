@@ -9,7 +9,10 @@
 
   <ItemGroup>
     <Compile Include="..\Swig\generated\**\*.cs" />
-    <None Include="..\Swig\bin\$(Platform)\$(Configuration)\*.dll">
+    <None Include="..\Swig\bin\$(Platform)\$(Configuration)\TestCpp.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Qt\bin\QtCore4.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

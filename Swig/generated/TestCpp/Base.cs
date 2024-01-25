@@ -36,26 +36,6 @@ public class Base : QObject {
     }
   }
 
-  public QObject GetSharedPtr() {
-    global::System.IntPtr cPtr = TESTCPPPINVOKE.Base_GetSharedPtr(swigCPtr);
-    QObject ret = (cPtr == global::System.IntPtr.Zero) ? null : new QObject(cPtr, true);
-    if (TESTCPPPINVOKE.SWIGPendingException.Pending) throw TESTCPPPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public Base GetSharedPtr2() {
-    global::System.IntPtr cPtr = TESTCPPPINVOKE.Base_GetSharedPtr2(swigCPtr);
-    Base ret = (cPtr == global::System.IntPtr.Zero) ? null : new Base(cPtr, true);
-    if (TESTCPPPINVOKE.SWIGPendingException.Pending) throw TESTCPPPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public SWIGTYPE_p_std__string GetName() {
-    SWIGTYPE_p_std__string ret = new SWIGTYPE_p_std__string(TESTCPPPINVOKE.Base_GetName(swigCPtr), true);
-    if (TESTCPPPINVOKE.SWIGPendingException.Pending) throw TESTCPPPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
   public Base() : this(TESTCPPPINVOKE.new_Base(), true) {
   }
 

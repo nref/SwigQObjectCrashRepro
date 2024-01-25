@@ -7,10 +7,5 @@ namespace TestCpp
 {
   class Derived : public Base
   {
-  public:
-    virtual ~Derived() {
-      printf("~Derived()");
-      fflush(stdout);
-    }
   };
 }

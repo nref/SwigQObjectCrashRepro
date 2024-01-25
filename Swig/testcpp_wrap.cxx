@@ -458,47 +458,14 @@ SWIGEXPORT void SWIGSTDCALL CSharp_TestCpp_delete_QObject(void * jarg1) {
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_TestCpp_Base_GetSharedPtr(void * jarg1) {
+SWIGEXPORT void * SWIGSTDCALL CSharp_TestCpp_new_Base() {
   void * jresult ;
-  TestCpp::Base *arg1 = (TestCpp::Base *) 0 ;
-  std::shared_ptr< TestCpp::Base > *smartarg1 = 0 ;
-  std::shared_ptr< QObject > result;
+  TestCpp::Base *result = 0 ;
   
+  result = (TestCpp::Base *)new TestCpp::Base();
   
-  smartarg1 = (std::shared_ptr<  TestCpp::Base > *)jarg1;
-  arg1 = (TestCpp::Base *)(smartarg1 ? smartarg1->get() : 0); 
-  result = (arg1)->GetSharedPtr();
-  jresult = result ? new std::shared_ptr< QObject >(result) : 0; 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_TestCpp_Base_GetSharedPtr2(void * jarg1) {
-  void * jresult ;
-  TestCpp::Base *arg1 = (TestCpp::Base *) 0 ;
-  std::shared_ptr< TestCpp::Base > *smartarg1 = 0 ;
-  std::shared_ptr< TestCpp::Base > result;
+  jresult = result ? new std::shared_ptr<  TestCpp::Base >(result SWIG_NO_NULL_DELETER_1) : 0;
   
-  
-  smartarg1 = (std::shared_ptr<  TestCpp::Base > *)jarg1;
-  arg1 = (TestCpp::Base *)(smartarg1 ? smartarg1->get() : 0); 
-  result = (arg1)->GetSharedPtr2();
-  jresult = result ? new std::shared_ptr< TestCpp::Base >(result) : 0; 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_TestCpp_Base_GetName(void * jarg1) {
-  void * jresult ;
-  TestCpp::Base *arg1 = (TestCpp::Base *) 0 ;
-  std::shared_ptr< TestCpp::Base > *smartarg1 = 0 ;
-  std::string result;
-  
-  
-  smartarg1 = (std::shared_ptr<  TestCpp::Base > *)jarg1;
-  arg1 = (TestCpp::Base *)(smartarg1 ? smartarg1->get() : 0); 
-  result = (arg1)->GetName();
-  jresult = new std::string(result); 
   return jresult;
 }
 
@@ -514,13 +481,13 @@ SWIGEXPORT void SWIGSTDCALL CSharp_TestCpp_delete_Base(void * jarg1) {
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_TestCpp_new_Base() {
+SWIGEXPORT void * SWIGSTDCALL CSharp_TestCpp_new_Derived() {
   void * jresult ;
-  TestCpp::Base *result = 0 ;
+  TestCpp::Derived *result = 0 ;
   
-  result = (TestCpp::Base *)new TestCpp::Base();
+  result = (TestCpp::Derived *)new TestCpp::Derived();
   
-  jresult = result ? new std::shared_ptr<  TestCpp::Base >(result SWIG_NO_NULL_DELETER_1) : 0;
+  jresult = result ? new std::shared_ptr<  TestCpp::Derived >(result SWIG_NO_NULL_DELETER_1) : 0;
   
   return jresult;
 }
@@ -534,18 +501,6 @@ SWIGEXPORT void SWIGSTDCALL CSharp_TestCpp_delete_Derived(void * jarg1) {
   smartarg1 = (std::shared_ptr<  TestCpp::Derived > *)jarg1;
   arg1 = (TestCpp::Derived *)(smartarg1 ? smartarg1->get() : 0); 
   (void)arg1; delete smartarg1;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_TestCpp_new_Derived() {
-  void * jresult ;
-  TestCpp::Derived *result = 0 ;
-  
-  result = (TestCpp::Derived *)new TestCpp::Derived();
-  
-  jresult = result ? new std::shared_ptr<  TestCpp::Derived >(result SWIG_NO_NULL_DELETER_1) : 0;
-  
-  return jresult;
 }
 
 

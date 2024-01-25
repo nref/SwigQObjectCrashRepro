@@ -2,5 +2,6 @@
 
 using (var derived = new Derived())
 {
-  Console.WriteLine(derived.GetSharedPtr().objectName());
+  //QObject qObject = derived.GetSharedPtr2();
+  //Console.WriteLine(qObject.objectName());
 };

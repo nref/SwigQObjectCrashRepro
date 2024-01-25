@@ -1,6 +1,7 @@
 #pragma once
 #include <memory>
 #include <QtCore/qobject.h>
+#include <cstdio>
 
 namespace TestCpp
 {
@@ -14,6 +15,10 @@ namespace TestCpp
     std::shared_ptr<QObject> GetSharedPtr();
     std::shared_ptr<Base> GetSharedPtr2();
     std::string GetName() { return "Money!"; }
+    virtual ~Base() {
+      printf("~Base()");
+      fflush(stdout);
+    }
   };
 }
 

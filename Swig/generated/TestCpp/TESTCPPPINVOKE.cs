@@ -214,17 +214,17 @@ class TESTCPPPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("TestCpp.dll", EntryPoint="CSharp_TestCpp_Base_GetName")]
   public static extern global::System.IntPtr Base_GetName(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("TestCpp.dll", EntryPoint="CSharp_TestCpp_new_Base")]
-  public static extern global::System.IntPtr new_Base();
-
   [global::System.Runtime.InteropServices.DllImport("TestCpp.dll", EntryPoint="CSharp_TestCpp_delete_Base")]
   public static extern void delete_Base(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("TestCpp.dll", EntryPoint="CSharp_TestCpp_new_Derived")]
-  public static extern global::System.IntPtr new_Derived();
+  [global::System.Runtime.InteropServices.DllImport("TestCpp.dll", EntryPoint="CSharp_TestCpp_new_Base")]
+  public static extern global::System.IntPtr new_Base();
 
   [global::System.Runtime.InteropServices.DllImport("TestCpp.dll", EntryPoint="CSharp_TestCpp_delete_Derived")]
   public static extern void delete_Derived(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("TestCpp.dll", EntryPoint="CSharp_TestCpp_new_Derived")]
+  public static extern global::System.IntPtr new_Derived();
 
   [global::System.Runtime.InteropServices.DllImport("TestCpp.dll", EntryPoint="CSharp_TestCpp_Base_SWIGSmartPtrUpcast")]
   public static extern global::System.IntPtr Base_SWIGSmartPtrUpcast(global::System.IntPtr jarg1);

@@ -15,9 +15,7 @@ public:
 };
 
 %include "std_shared_ptr.i"
-%shared_ptr(QObject);
-%shared_ptr(TestCpp::Base);
-%shared_ptr(TestCpp::Derived);
+#%shared_ptr(TestCpp::Derived);
 
 %include "Base.h"
 %include "Derived.h"
